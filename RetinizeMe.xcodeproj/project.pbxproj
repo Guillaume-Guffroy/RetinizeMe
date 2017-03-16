@@ -1,0 +1,301 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F012CDA31E79453D00D52F1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F012CDA21E79453D00D52F1C /* AppDelegate.swift */; };
+		F012CDA51E79453D00D52F1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F012CDA41E79453D00D52F1C /* ViewController.swift */; };
+		F012CDA71E79453D00D52F1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F012CDA61E79453D00D52F1C /* Assets.xcassets */; };
+		F012CDAA1E79453D00D52F1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F012CDA81E79453D00D52F1C /* Main.storyboard */; };
+		F012CDB21E794B0500D52F1C /* GGDropAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F012CDB11E794B0500D52F1C /* GGDropAreaView.swift */; };
+		F012CDB41E7AEE3200D52F1C /* URL+GG.swift in Sources */ = {isa = PBXBuildFile; fileRef = F012CDB31E7AEE3200D52F1C /* URL+GG.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F012CD9F1E79453D00D52F1C /* RetinizeMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetinizeMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F012CDA21E79453D00D52F1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F012CDA41E79453D00D52F1C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F012CDA61E79453D00D52F1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F012CDA91E79453D00D52F1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F012CDAB1E79453D00D52F1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F012CDB11E794B0500D52F1C /* GGDropAreaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GGDropAreaView.swift; sourceTree = "<group>"; };
+		F012CDB31E7AEE3200D52F1C /* URL+GG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+GG.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F012CD9C1E79453D00D52F1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F012CD961E79453D00D52F1C = {
+			isa = PBXGroup;
+			children = (
+				F012CDA11E79453D00D52F1C /* RetinizeMe */,
+				F012CDA01E79453D00D52F1C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F012CDA01E79453D00D52F1C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F012CD9F1E79453D00D52F1C /* RetinizeMe.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F012CDA11E79453D00D52F1C /* RetinizeMe */ = {
+			isa = PBXGroup;
+			children = (
+				F012CDA21E79453D00D52F1C /* AppDelegate.swift */,
+				F012CDA41E79453D00D52F1C /* ViewController.swift */,
+				F012CDA61E79453D00D52F1C /* Assets.xcassets */,
+				F012CDA81E79453D00D52F1C /* Main.storyboard */,
+				F012CDAB1E79453D00D52F1C /* Info.plist */,
+				F012CDB11E794B0500D52F1C /* GGDropAreaView.swift */,
+				F012CDB31E7AEE3200D52F1C /* URL+GG.swift */,
+			);
+			path = RetinizeMe;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F012CD9E1E79453D00D52F1C /* RetinizeMe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F012CDAE1E79453D00D52F1C /* Build configuration list for PBXNativeTarget "RetinizeMe" */;
+			buildPhases = (
+				F012CD9B1E79453D00D52F1C /* Sources */,
+				F012CD9C1E79453D00D52F1C /* Frameworks */,
+				F012CD9D1E79453D00D52F1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RetinizeMe;
+			productName = RetinizeMe;
+			productReference = F012CD9F1E79453D00D52F1C /* RetinizeMe.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F012CD971E79453D00D52F1C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Guillaume GUFFROY";
+				TargetAttributes = {
+					F012CD9E1E79453D00D52F1C = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F012CD9A1E79453D00D52F1C /* Build configuration list for PBXProject "RetinizeMe" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F012CD961E79453D00D52F1C;
+			productRefGroup = F012CDA01E79453D00D52F1C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F012CD9E1E79453D00D52F1C /* RetinizeMe */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F012CD9D1E79453D00D52F1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F012CDA71E79453D00D52F1C /* Assets.xcassets in Resources */,
+				F012CDAA1E79453D00D52F1C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F012CD9B1E79453D00D52F1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F012CDA51E79453D00D52F1C /* ViewController.swift in Sources */,
+				F012CDA31E79453D00D52F1C /* AppDelegate.swift in Sources */,
+				F012CDB21E794B0500D52F1C /* GGDropAreaView.swift in Sources */,
+				F012CDB41E7AEE3200D52F1C /* URL+GG.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F012CDA81E79453D00D52F1C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F012CDA91E79453D00D52F1C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F012CDAC1E79453D00D52F1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F012CDAD1E79453D00D52F1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		F012CDAF1E79453D00D52F1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RetinizeMe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.guffroyguillaume.RetinizeMe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F012CDB01E79453D00D52F1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RetinizeMe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.guffroyguillaume.RetinizeMe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F012CD9A1E79453D00D52F1C /* Build configuration list for PBXProject "RetinizeMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F012CDAC1E79453D00D52F1C /* Debug */,
+				F012CDAD1E79453D00D52F1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F012CDAE1E79453D00D52F1C /* Build configuration list for PBXNativeTarget "RetinizeMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F012CDAF1E79453D00D52F1C /* Debug */,
+				F012CDB01E79453D00D52F1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F012CD971E79453D00D52F1C /* Project object */;
+}
