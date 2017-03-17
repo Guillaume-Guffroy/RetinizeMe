@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainViewController.swift
 //  RetinizeMe
 //
 //  Created by Guillaume GUFFROY on 15/03/2017.
@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class ViewController: NSViewController {
+class MainViewController: NSViewController {
     @IBOutlet weak var pathControl: NSPathControl!
     @IBOutlet weak var dropAreaView: GGDropAreaView!
     @IBOutlet weak var dragLocationLabel: NSTextField!
@@ -22,7 +22,7 @@ class ViewController: NSViewController {
     }
 }
 
-extension ViewController:GGDropAreaViewDelegate {
+extension MainViewController:GGDropAreaViewDelegate {
     func processURLs(_ urls: [URL]) {
         NSAnimationContext.runAnimationGroup({ (context) in
             dragLocationLabel.animator().alphaValue = 0
@@ -52,7 +52,7 @@ extension ViewController:GGDropAreaViewDelegate {
     func treatUrls(urls:[URL], destPath:URL) {
         urls.forEach { (fileURL) in
             if fileURL.isImage() {
-                retinizeImage(sourceImageURL: fileURL).forEach({ (imageDict) in
+                retinizeImageAtURL(fileURL).forEach({ (imageDict) in
                     guard let filename = imageDict["filename"] as? String, let image = imageDict["image"] as? NSImage else {
                         return
                     }
@@ -80,7 +80,7 @@ extension ViewController:GGDropAreaViewDelegate {
     }
     
     
-    func retinizeImage(sourceImageURL:URL) -> [[String:Any]] {
+    func retinizeImageAtURL(_ sourceImageURL:URL) -> [[String:Any]] {
         let imageFullName = sourceImageURL.lastPathComponent
         
         guard let sourceImage = NSImage(contentsOf: sourceImageURL),
@@ -103,28 +103,7 @@ extension ViewController:GGDropAreaViewDelegate {
                 images.append(["image":image1x, "filename" : "\(realImageName).\(imageExtension)"])
             }
             
-        } /*else if imageName.contains("@2x") {
-            realImageName = imageName.replacingOccurrences(of: "@2x", with: "")
-            
-            images.append(["image":sourceImage, "filename" : "\(realImageName)@2x.\(imageExtension)"])
-            if let image3x = resize(image: sourceImage, scaleFactor: CGFloat(1.5)) {
-                images.append(["image":image3x, "filename" : "\(realImageName)@3x.\(imageExtension)"])
-            }
-            if let image1x = resize(image: sourceImage, scaleFactor: CGFloat(0.5)) {
-                images.append(["image":image1x, "filename" : "\(realImageName).\(imageExtension)"])
-            }
-            
-        } else {
-            realImageName = imageName
-            
-            images.append(["image":sourceImage, "filename" : "\(realImageName).\(imageExtension)"])
-            if let image2x = resize(image: sourceImage, scaleFactor: CGFloat(2)) {
-                images.append(["image":image2x, "filename" : "\(realImageName)@2x.\(imageExtension)"])
-            }
-            if let image3x = resize(image: sourceImage, scaleFactor: CGFloat(3)) {
-                images.append(["image":image3x, "filename" : "\(realImageName)@3x.\(imageExtension)"])
-            }
-        }*/
+        }
         return images
     }
     
@@ -154,7 +133,7 @@ extension ViewController:GGDropAreaViewDelegate {
     }
 }
 
-extension ViewController:NSPathControlDelegate {
+extension MainViewController:NSPathControlDelegate {
     func pathControl(_ pathControl: NSPathControl, willDisplay openPanel: NSOpenPanel) {
         openPanel.canCreateDirectories = true
     }

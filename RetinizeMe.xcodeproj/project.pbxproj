@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F012CDA31E79453D00D52F1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F012CDA21E79453D00D52F1C /* AppDelegate.swift */; };
-		F012CDA51E79453D00D52F1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F012CDA41E79453D00D52F1C /* ViewController.swift */; };
+		F012CDA51E79453D00D52F1C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F012CDA41E79453D00D52F1C /* MainViewController.swift */; };
 		F012CDA71E79453D00D52F1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F012CDA61E79453D00D52F1C /* Assets.xcassets */; };
 		F012CDAA1E79453D00D52F1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F012CDA81E79453D00D52F1C /* Main.storyboard */; };
 		F012CDB21E794B0500D52F1C /* GGDropAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F012CDB11E794B0500D52F1C /* GGDropAreaView.swift */; };
@@ -18,7 +18,7 @@
 /* Begin PBXFileReference section */
 		F012CD9F1E79453D00D52F1C /* RetinizeMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetinizeMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F012CDA21E79453D00D52F1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F012CDA41E79453D00D52F1C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F012CDA41E79453D00D52F1C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F012CDA61E79453D00D52F1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F012CDA91E79453D00D52F1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F012CDAB1E79453D00D52F1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,7 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				F012CDA21E79453D00D52F1C /* AppDelegate.swift */,
-				F012CDA41E79453D00D52F1C /* ViewController.swift */,
+				F012CDA41E79453D00D52F1C /* MainViewController.swift */,
 				F012CDA61E79453D00D52F1C /* Assets.xcassets */,
 				F012CDA81E79453D00D52F1C /* Main.storyboard */,
 				F012CDAB1E79453D00D52F1C /* Info.plist */,
@@ -138,7 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F012CDA51E79453D00D52F1C /* ViewController.swift in Sources */,
+				F012CDA51E79453D00D52F1C /* MainViewController.swift in Sources */,
 				F012CDA31E79453D00D52F1C /* AppDelegate.swift in Sources */,
 				F012CDB21E794B0500D52F1C /* GGDropAreaView.swift in Sources */,
 				F012CDB41E7AEE3200D52F1C /* URL+GG.swift in Sources */,
@@ -294,6 +294,7 @@
 				F012CDB01E79453D00D52F1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

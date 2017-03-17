@@ -51,6 +51,7 @@ class GGDropAreaView: NSView {
         return nil
     }
     
+    
     func shouldAllowDrag(_ draggingInfo: NSDraggingInfo) -> Bool {
         var canAccept = false
         let pasteBoard = draggingInfo.draggingPasteboard()
@@ -60,6 +61,8 @@ class GGDropAreaView: NSView {
         return canAccept
     }
     
+    
+    // MARK: Dragging delegate
     override func draggingEntered(_ sender: NSDraggingInfo) -> NSDragOperation {
         let allow = shouldAllowDrag(sender)
         isReceivingDrag = allow
