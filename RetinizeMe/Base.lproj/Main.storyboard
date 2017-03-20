@@ -695,14 +695,16 @@
                                 </textFieldCell>
                             </textField>
                             <pathControl focusRingType="none" horizontalHuggingPriority="252" verticalHuggingPriority="750" allowsExpansionToolTips="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MKs-o7-qyR">
-                                <rect key="frame" x="381" y="219" width="94" height="26"/>
+                                <rect key="frame" x="344" y="219" width="131" height="26"/>
                                 <pathCell key="cell" selectable="YES" editable="YES" focusRingType="none" alignment="left" pathStyle="popUp" id="oMN-UP-I27">
                                     <font key="font" metaFont="system"/>
-                                    <url key="url" string="file:///Users/guillaume/Documents/VehiclesHB/TEST/"/>
+                                    <url key="url" string="~/Documents">
+                                        <url key="baseURL" string="file:///"/>
+                                    </url>
                                 </pathCell>
                             </pathControl>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZG-XS-VtH">
-                                <rect key="frame" x="6" y="224" width="372" height="17"/>
+                                <rect key="frame" x="6" y="224" width="335" height="17"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Destination directory" id="uuG-NQ-tS2">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>

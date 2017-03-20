@@ -19,6 +19,7 @@ class MainViewController: NSViewController {
         super.viewDidLoad()
         dropAreaView.delegate = self
         pathControl.delegate = self
+        pathControl.url = FileManager.default.homeDirectoryForCurrentUser
     }
 }
 
